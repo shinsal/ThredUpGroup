@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupListActivity" >
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:alpha="0.9"
+        android:background="@color/white"
+        android:text="@string/no_group"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+    <ExpandableListView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:childDivider="@drawable/child_separator"
+        android:alpha="0.9"
+        android:groupIndicator="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:background="@android:color/transparent" >
+    </ExpandableListView>
+
+</RelativeLayout>

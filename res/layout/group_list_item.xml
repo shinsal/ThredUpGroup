@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="150dip"
+    android:baselineAligned="false"
+    android:padding="10dip"
+    android:background="@color/teal"
+    android:alpha="0.9"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        
+        <TextView 
+            android:id="@+id/item_percent"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:gravity="center"
+        	android:layout_gravity="center"
+        	android:textSize="30sp"
+        	android:textColor="@color/white"/>
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/inner_circle"/>
+        
+        <ImageView 
+            android:id="@+id/outer_ring_view"
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:contentDescription="@string/outerRing" />
+        
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:paddingBottom="5dip"
+	        android:gravity="bottom"
+	        android:orientation="vertical" >
+        
+            <TextView
+                android:id="@+id/item_top_desc"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:text="@string/amount_raised_desc"
+	            android:textAllCaps="true"
+	            android:textSize="12sp"
+	            android:textColor="@color/white" />
+	        <TextView
+	            android:id="@+id/item_top_amount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textSize="23sp"
+	            android:textColor="@color/white" />
+        
+        </LinearLayout>
+
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:paddingTop="5dip"
+	        android:gravity="top"
+	        android:orientation="vertical" >
+        
+            <TextView
+                android:id="@+id/item_bottom_desc"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textAllCaps="true"
+	            android:text="@string/amount_goal_desc"
+	            android:textSize="12sp"
+	            android:textColor="@color/white" />
+	        <TextView
+	            android:id="@+id/item_bottom_amount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:textSize="23sp"
+	            android:textColor="@color/white" />
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

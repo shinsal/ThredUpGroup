@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal">#00b288</color> <!-- #66CDAA #00CC99 -->
+    <color name="white">#ffffff</color>
+    <color name="whiteSolid">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="tealTransparent">#e600b288</color>
+    <color name="blackTransparent">#e6000000</color>
+    <color name="tealText">#008833</color>
+    <color name="actionBarColor">#252525</color>
+    <color name="innerRing">#e666d1b8</color>
+    <color name="outerring">#ffffff</color>
+</resources>

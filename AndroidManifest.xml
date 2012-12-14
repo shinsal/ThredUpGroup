@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ssalim.thredup.thredupgroup"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.ssalim.thredup.thredupgroup.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.ssalim.thredup.thredupgroup.GroupDetailActivity"
+            android:label="@string/title_activity_group_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.ssalim.thredup.thredupgroup.ThredUpService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        
+    </application>
+
+</manifest>
